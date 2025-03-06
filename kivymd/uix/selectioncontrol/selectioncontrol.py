@@ -815,7 +815,7 @@ class MDSwitch(StateLayerBehavior, MDFloatLayout):
             icon = icon_value if icon_value else "blank"
             self.ids.thumb.ids.icon.icon = icon
 
-        Clock.schedule_once(set_icon, 0.2)
+        set_icon()
 
     def on_line_color(self, instance, value) -> None:
         """Fired when the values of :attr:`line_color` change."""
